@@ -223,8 +223,8 @@ fun fontSizeVariantToFontSize(
 ): Dp {
     val divFactor =
         when (fontSizeVariant) {
-            FontSizeVariant.LARGE -> 2.5f
-            FontSizeVariant.SMALL -> 5f
+            FontSizeVariant.LARGE -> 2.25f
+            FontSizeVariant.SMALL -> 4f
             FontSizeVariant.SMALLEST -> 8f
         }
 
