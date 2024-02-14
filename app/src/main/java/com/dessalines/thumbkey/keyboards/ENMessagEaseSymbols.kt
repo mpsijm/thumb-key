@@ -19,6 +19,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_MAIN =
                     bottomRight = KeyC("v"),
                     right = KeyC("-", color = MUTED),
                     bottomLeft = KeyC("$", color = MUTED),
+                    longPress = KeyAction.CommitText("1"),
                 ),
                 KeyItemC(
                     center = KeyC("n", size = LARGE),
@@ -39,6 +40,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_MAIN =
                     bottomRight = KeyC("\\", color = MUTED),
                     bottomLeft = KeyC("/", color = MUTED),
                     left = KeyC("+", color = MUTED),
+                    longPress = KeyAction.CommitText("2"),
                 ),
                 KeyItemC(
                     center = KeyC("i", size = LARGE),
@@ -46,6 +48,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_MAIN =
                     left = KeyC("?", color = MUTED),
                     bottomRight = KeyC("€", color = MUTED),
                     bottom = KeyC("=", color = MUTED),
+                    longPress = KeyAction.CommitText("3"),
                 ),
                 EMOJI_KEY_ITEM,
             ),
@@ -58,6 +61,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_MAIN =
                     bottomRight = KeyC("_", color = MUTED),
                     bottomLeft = KeyC("[", color = MUTED),
                     left = KeyC("(", color = MUTED),
+                    longPress = KeyAction.CommitText("4"),
                 ),
                 KeyItemC(
                     center = KeyC("o", size = LARGE),
@@ -69,6 +73,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_MAIN =
                     bottom = KeyC("d"),
                     bottomLeft = KeyC("g"),
                     left = KeyC("c"),
+                    longPress = KeyAction.CommitText("5"),
                 ),
                 KeyItemC(
                     center = KeyC("r", size = LARGE),
@@ -90,6 +95,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_MAIN =
                         ),
                     bottomRight = KeyC("]", color = MUTED),
                     bottomLeft = KeyC("@", color = MUTED),
+                    longPress = KeyAction.CommitText("6"),
                 ),
                 NUMERIC_KEY_ITEM,
             ),
@@ -108,6 +114,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_MAIN =
                     right = KeyC("*", color = MUTED),
                     bottomRight = KeyC("\t", displayText = "⇥", color = MUTED),
                     left = KeyC("<", color = MUTED),
+                    longPress = KeyAction.CommitText("7"),
                 ),
                 KeyItemC(
                     center = KeyC("e", size = LARGE),
@@ -118,6 +125,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_MAIN =
                     bottomRight = KeyC(":", color = MUTED),
                     bottom = KeyC(".", color = MUTED),
                     bottomLeft = KeyC(",", color = MUTED),
+                    longPress = KeyAction.CommitText("8"),
                 ),
                 KeyItemC(
                     center = KeyC("s", size = LARGE),
@@ -130,11 +138,12 @@ val KB_EN_MESSAGEASE_SYMBOLS_MAIN =
                     right = KeyC(">", color = MUTED),
                     bottomLeft = KeyC(";", color = MUTED),
                     left = KeyC("#", color = MUTED),
+                    longPress = KeyAction.CommitText("9"),
                 ),
                 BACKSPACE_KEY_ITEM,
             ),
             listOf(
-                SPACEBAR_KEY_ITEM,
+                SPACEBAR_KEY_ITEM.copy(longPress = KeyAction.CommitText("0")),
                 RETURN_KEY_ITEM,
             ),
         ),
@@ -149,6 +158,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_SHIFTED =
                     bottomRight = KeyC("V"),
                     right = KeyC("-", color = MUTED),
                     bottomLeft = KeyC("$", color = MUTED),
+                    longPress = KeyAction.CommitText("1"),
                 ),
                 KeyItemC(
                     center = KeyC("N", size = LARGE),
@@ -169,6 +179,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_SHIFTED =
                     bottomRight = KeyC("\\", color = MUTED),
                     bottomLeft = KeyC("/", color = MUTED),
                     left = KeyC("+", color = MUTED),
+                    longPress = KeyAction.CommitText("2"),
                 ),
                 KeyItemC(
                     center = KeyC("I", size = LARGE),
@@ -176,6 +187,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_SHIFTED =
                     left = KeyC("?", color = MUTED),
                     bottomRight = KeyC("€", color = MUTED),
                     bottom = KeyC("=", color = MUTED),
+                    longPress = KeyAction.CommitText("3"),
                 ),
                 EMOJI_KEY_ITEM,
             ),
@@ -188,6 +200,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_SHIFTED =
                     bottomRight = KeyC("_", color = MUTED),
                     bottomLeft = KeyC("[", color = MUTED),
                     left = KeyC("(", color = MUTED),
+                    longPress = KeyAction.CommitText("4"),
                 ),
                 KeyItemC(
                     center = KeyC("O", size = LARGE),
@@ -199,6 +212,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_SHIFTED =
                     bottom = KeyC("D"),
                     bottomLeft = KeyC("G"),
                     left = KeyC("C"),
+                    longPress = KeyAction.CommitText("5"),
                 ),
                 KeyItemC(
                     center = KeyC("R", size = LARGE),
@@ -223,6 +237,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_SHIFTED =
                     right = KeyC(")", color = MUTED),
                     bottomRight = KeyC("]", color = MUTED),
                     bottomLeft = KeyC("@", color = MUTED),
+                    longPress = KeyAction.CommitText("6"),
                 ),
                 NUMERIC_KEY_ITEM,
             ),
@@ -241,6 +256,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_SHIFTED =
                     right = KeyC("*", color = MUTED),
                     left = KeyC("<", color = MUTED),
                     bottomRight = KeyC("\t", displayText = "⇥", color = MUTED),
+                    longPress = KeyAction.CommitText("7"),
                 ),
                 KeyItemC(
                     center = KeyC("E", size = LARGE),
@@ -251,6 +267,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_SHIFTED =
                     bottomRight = KeyC(":", color = MUTED),
                     bottom = KeyC(".", color = MUTED),
                     bottomLeft = KeyC(",", color = MUTED),
+                    longPress = KeyAction.CommitText("8"),
                 ),
                 KeyItemC(
                     center = KeyC("S", size = LARGE),
@@ -263,11 +280,12 @@ val KB_EN_MESSAGEASE_SYMBOLS_SHIFTED =
                     right = KeyC(">", color = MUTED),
                     bottomLeft = KeyC(";", color = MUTED),
                     left = KeyC("#", color = MUTED),
+                    longPress = KeyAction.CommitText("9"),
                 ),
                 BACKSPACE_KEY_ITEM,
             ),
             listOf(
-                SPACEBAR_KEY_ITEM,
+                SPACEBAR_KEY_ITEM.copy(longPress = KeyAction.CommitText("0")),
                 RETURN_KEY_ITEM,
             ),
         ),
