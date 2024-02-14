@@ -30,6 +30,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_MAIN =
                             size = FontSizeVariant.LARGE,
                             color = ColorVariant.PRIMARY,
                         ),
+                    longPress = KeyAction.CommitText("1"),
                     swipes =
                         mapOf(
                             SwipeDirection.BOTTOM_RIGHT to
@@ -55,6 +56,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_MAIN =
                             size = FontSizeVariant.LARGE,
                             color = ColorVariant.PRIMARY,
                         ),
+                    longPress = KeyAction.CommitText("2"),
                     swipes =
                         mapOf(
                             SwipeDirection.BOTTOM to
@@ -105,6 +107,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_MAIN =
                             size = FontSizeVariant.LARGE,
                             color = ColorVariant.PRIMARY,
                         ),
+                    longPress = KeyAction.CommitText("3"),
                     swipes =
                         mapOf(
                             SwipeDirection.BOTTOM_LEFT to
@@ -138,6 +141,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_MAIN =
                             size = FontSizeVariant.LARGE,
                             color = ColorVariant.PRIMARY,
                         ),
+                    longPress = KeyAction.CommitText("4"),
                     swipes =
                         mapOf(
                             SwipeDirection.RIGHT to
@@ -178,6 +182,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_MAIN =
                             size = FontSizeVariant.LARGE,
                             color = ColorVariant.PRIMARY,
                         ),
+                    longPress = KeyAction.CommitText("5"),
                     swipes =
                         mapOf(
                             SwipeDirection.TOP_LEFT to
@@ -221,6 +226,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_MAIN =
                             size = FontSizeVariant.LARGE,
                             color = ColorVariant.PRIMARY,
                         ),
+                    longPress = KeyAction.CommitText("6"),
                     swipes =
                         mapOf(
                             SwipeDirection.LEFT to
@@ -270,6 +276,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_MAIN =
                             size = FontSizeVariant.LARGE,
                             color = ColorVariant.PRIMARY,
                         ),
+                    longPress = KeyAction.CommitText("7"),
                     swipes =
                         mapOf(
                             SwipeDirection.TOP_RIGHT to
@@ -311,6 +318,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_MAIN =
                             size = FontSizeVariant.LARGE,
                             color = ColorVariant.PRIMARY,
                         ),
+                    longPress = KeyAction.CommitText("8"),
                     swipes =
                         mapOf(
                             SwipeDirection.TOP_LEFT to
@@ -355,6 +363,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_MAIN =
                             size = FontSizeVariant.LARGE,
                             color = ColorVariant.PRIMARY,
                         ),
+                    longPress = KeyAction.CommitText("9"),
                     swipes =
                         mapOf(
                             SwipeDirection.TOP_LEFT to
@@ -391,7 +400,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_MAIN =
                 BACKSPACE_KEY_ITEM,
             ),
             listOf(
-                SPACEBAR_KEY_ITEM,
+                SPACEBAR_KEY_ITEM.copy(longPress = KeyAction.CommitText("0")),
                 RETURN_KEY_ITEM,
             ),
         ),
@@ -408,6 +417,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_SHIFTED =
                             size = FontSizeVariant.LARGE,
                             color = ColorVariant.PRIMARY,
                         ),
+                    longPress = KeyAction.CommitText("1"),
                     swipes =
                         mapOf(
                             SwipeDirection.BOTTOM_RIGHT to
@@ -433,6 +443,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_SHIFTED =
                             size = FontSizeVariant.LARGE,
                             color = ColorVariant.PRIMARY,
                         ),
+                    longPress = KeyAction.CommitText("2"),
                     swipes =
                         mapOf(
                             SwipeDirection.BOTTOM to
@@ -483,6 +494,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_SHIFTED =
                             size = FontSizeVariant.LARGE,
                             color = ColorVariant.PRIMARY,
                         ),
+                    longPress = KeyAction.CommitText("3"),
                     swipes =
                         mapOf(
                             SwipeDirection.BOTTOM_LEFT to
@@ -516,6 +528,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_SHIFTED =
                             size = FontSizeVariant.LARGE,
                             color = ColorVariant.PRIMARY,
                         ),
+                    longPress = KeyAction.CommitText("4"),
                     swipes =
                         mapOf(
                             SwipeDirection.RIGHT to
@@ -556,6 +569,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_SHIFTED =
                             size = FontSizeVariant.LARGE,
                             color = ColorVariant.PRIMARY,
                         ),
+                    longPress = KeyAction.CommitText("5"),
                     swipes =
                         mapOf(
                             SwipeDirection.TOP_LEFT to
@@ -599,6 +613,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_SHIFTED =
                             size = FontSizeVariant.LARGE,
                             color = ColorVariant.PRIMARY,
                         ),
+                    longPress = KeyAction.CommitText("6"),
                     swipes =
                         mapOf(
                             SwipeDirection.LEFT to
@@ -655,6 +670,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_SHIFTED =
                             size = FontSizeVariant.LARGE,
                             color = ColorVariant.PRIMARY,
                         ),
+                    longPress = KeyAction.CommitText("7"),
                     swipes =
                         mapOf(
                             SwipeDirection.TOP_RIGHT to
@@ -696,6 +712,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_SHIFTED =
                             size = FontSizeVariant.LARGE,
                             color = ColorVariant.PRIMARY,
                         ),
+                    longPress = KeyAction.CommitText("8"),
                     swipes =
                         mapOf(
                             SwipeDirection.TOP_LEFT to
@@ -740,6 +757,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_SHIFTED =
                             size = FontSizeVariant.LARGE,
                             color = ColorVariant.PRIMARY,
                         ),
+                    longPress = KeyAction.CommitText("9"),
                     swipes =
                         mapOf(
                             SwipeDirection.TOP_LEFT to
@@ -776,7 +794,7 @@ val KB_EN_MESSAGEASE_SYMBOLS_SHIFTED =
                 BACKSPACE_KEY_ITEM,
             ),
             listOf(
-                SPACEBAR_KEY_ITEM,
+                SPACEBAR_KEY_ITEM.copy(longPress = KeyAction.CommitText("0")),
                 RETURN_KEY_ITEM,
             ),
         ),
