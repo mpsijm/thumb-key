@@ -54,6 +54,7 @@ data class KeyC(
     val display: KeyDisplay? =
         when (action) {
             is KeyAction.CommitText -> KeyDisplay.TextDisplay(action.text)
+            is KeyAction.ComposeLastKey -> KeyDisplay.TextDisplay(action.text)
             else -> null
         },
     val capsModeDisplay: KeyDisplay? = null,
