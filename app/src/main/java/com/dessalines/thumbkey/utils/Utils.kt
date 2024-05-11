@@ -395,7 +395,7 @@ fun performKeyAction(
 
             val textNew =
                 when (text) {
-                    "\"" ->
+                    "\"", "¨" ->
                         when (textBefore) {
                             "a" -> "ä"
                             "A" -> "Ä"
@@ -416,11 +416,10 @@ fun performKeyAction(
                             "X" -> "Ẍ"
                             "y" -> "ÿ"
                             "Y" -> "Ÿ"
-                            " " -> "\""
-                            else -> textBefore
+                            else -> "$textBefore$text"
                         }
 
-                    "'" ->
+                    "'", "´" ->
                         when (textBefore) {
                             "a" -> "á"
                             "A" -> "Á"
@@ -470,9 +469,8 @@ fun performKeyAction(
                             "Y" -> "Ý"
                             "z" -> "ź"
                             "Z" -> "Ź"
-                            "'" -> "”"
-                            " " -> "'"
-                            else -> textBefore
+                            "'", "´" -> "”"
+                            else -> "$textBefore$text"
                         }
 
                     "`" ->
@@ -508,8 +506,7 @@ fun performKeyAction(
                             "y" -> "ỳ"
                             "Y" -> "Ỳ"
                             "`" -> "“"
-                            " " -> "`"
-                            else -> textBefore
+                            else -> "$textBefore$text"
                         }
 
                     "^" ->
@@ -540,8 +537,7 @@ fun performKeyAction(
                             "Y" -> "Ŷ"
                             "z" -> "ẑ"
                             "Z" -> "Ẑ"
-                            " " -> "^"
-                            else -> textBefore
+                            else -> "$textBefore$text"
                         }
 
                     "~" ->
@@ -576,8 +572,7 @@ fun performKeyAction(
                             "V" -> "Ṽ"
                             "y" -> "ỹ"
                             "Y" -> "Ỹ"
-                            " " -> "~"
-                            else -> textBefore
+                            else -> "$textBefore$text"
                         }
 
                     "°" ->
@@ -588,8 +583,7 @@ fun performKeyAction(
                             "O" -> "Ø"
                             "u" -> "ů"
                             "U" -> "Ů"
-                            " " -> "°"
-                            else -> textBefore
+                            else -> "$textBefore$text"
                         }
 
                     "˘" ->
@@ -606,8 +600,7 @@ fun performKeyAction(
                             "O" -> "Ŏ"
                             "u" -> "ŭ"
                             "U" -> "Ŭ"
-                            " " -> "˘"
-                            else -> textBefore
+                            else -> "$textBefore$text"
                         }
 
                     "!" ->
@@ -636,8 +629,7 @@ fun performKeyAction(
                             "'" -> "”"
                             "<" -> "«"
                             ">" -> "»"
-                            " " -> "!"
-                            else -> textBefore
+                            else -> "$textBefore$text"
                         }
 
                     "\$" ->
@@ -654,8 +646,7 @@ fun performKeyAction(
                             "Y" -> "¥"
                             "w" -> "₩"
                             "W" -> "₩"
-                            " " -> "\$"
-                            else -> textBefore
+                            else -> "$textBefore$text"
                         }
 
                     "゛" ->
@@ -742,7 +733,7 @@ fun performKeyAction(
                             "ヲ" -> "ヺ"
                             "ヷ" -> "ヮ"
                             "ヽ" -> "ヾ"
-                            else -> textBefore
+                            else -> "$textBefore$text"
                         }
 
                     "?" ->
@@ -769,7 +760,7 @@ fun performKeyAction(
                             "E" -> "Ẻ"
                             "ê" -> "ể"
                             "Ê" -> "Ể"
-                            else -> textBefore
+                            else -> "$textBefore$text"
                         }
 
                     "*" ->
@@ -796,7 +787,7 @@ fun performKeyAction(
                             "E" -> "Ẹ"
                             "ê" -> "ệ"
                             "Ê" -> "Ệ"
-                            else -> textBefore
+                            else -> "$textBefore$text"
                         }
 
                     "ˇ" ->
