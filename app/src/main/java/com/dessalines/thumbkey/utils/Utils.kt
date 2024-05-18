@@ -1004,7 +1004,7 @@ private fun autoCapitalize(
 }
 
 fun autoCapitalizeCheck(ime: IMEService): Boolean {
-    return ime.currentInputConnection.getCursorCapsMode(TextUtils.CAP_MODE_SENTENCES) > 0
+    return ime.currentInputConnection.getCursorCapsMode(ime.currentInputEditorInfo.inputType) > 0
 }
 
 /**
