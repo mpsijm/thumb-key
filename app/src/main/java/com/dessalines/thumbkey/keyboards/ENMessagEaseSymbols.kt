@@ -23,9 +23,18 @@ val KB_EN_MESSAGEASE_SYMBOLS_MAIN =
                 KeyItemC(
                     center = KeyC("n", size = LARGE),
                     bottom = KeyC("l"),
-                    topLeft = KeyC("`", color = MUTED),
-                    top = KeyC("^", color = MUTED),
-                    topRight = KeyC("´", color = MUTED),
+                    topLeft = KeyC(
+                        action = KeyAction.ComposeLastKey("`"),
+                        color = ColorVariant.MUTED,
+                    ),
+                    top = KeyC(
+                        action = KeyAction.ComposeLastKey("^"),
+                        color = ColorVariant.MUTED,
+                    ),
+                    topRight = KeyC(
+                        action = KeyAction.ComposeLastKey("´"),
+                        color = ColorVariant.MUTED,
+                    ),
                     right = KeyC("!", color = MUTED),
                     bottomRight = KeyC("\\", color = MUTED),
                     bottomLeft = KeyC("/", color = MUTED),
@@ -87,8 +96,15 @@ val KB_EN_MESSAGEASE_SYMBOLS_MAIN =
             listOf(
                 KeyItemC(
                     center = KeyC("t", size = LARGE),
+                    topLeft = KeyC(
+                        action = KeyAction.ComposeLastKey("~"),
+                        color = ColorVariant.MUTED,
+                    ),
+                    top = KeyC(
+                        action = KeyAction.ComposeLastKey("¨"),
+                        color = ColorVariant.MUTED,
+                    ),
                     topRight = KeyC("y"),
-                    topLeft = KeyC("~", color = MUTED),
                     right = KeyC("*", color = MUTED),
                     bottomRight = KeyC("\t", displayText = "⇥", color = MUTED),
                     left = KeyC("<", color = MUTED),
@@ -107,7 +123,10 @@ val KB_EN_MESSAGEASE_SYMBOLS_MAIN =
                     center = KeyC("s", size = LARGE),
                     topLeft = KeyC("f"),
                     top = KeyC("&", color = MUTED),
-                    topRight = KeyC("°", color = MUTED),
+                    topRight = KeyC(
+                        action = KeyAction.ComposeLastKey("°"),
+                        color = ColorVariant.MUTED,
+                    ),
                     right = KeyC(">", color = MUTED),
                     bottomLeft = KeyC(";", color = MUTED),
                     left = KeyC("#", color = MUTED),
@@ -134,9 +153,18 @@ val KB_EN_MESSAGEASE_SYMBOLS_SHIFTED =
                 KeyItemC(
                     center = KeyC("N", size = LARGE),
                     bottom = KeyC("L"),
-                    topLeft = KeyC("`", color = MUTED),
-                    top = KeyC("^", color = MUTED),
-                    topRight = KeyC("´", color = MUTED),
+                    topLeft = KeyC(
+                        action = KeyAction.ComposeLastKey("`"),
+                        color = ColorVariant.MUTED,
+                    ),
+                    top = KeyC(
+                        action = KeyAction.ComposeLastKey("^"),
+                        color = ColorVariant.MUTED,
+                    ),
+                    topRight = KeyC(
+                        action = KeyAction.ComposeLastKey("´"),
+                        color = ColorVariant.MUTED,
+                    ),
                     right = KeyC("!", color = MUTED),
                     bottomRight = KeyC("\\", color = MUTED),
                     bottomLeft = KeyC("/", color = MUTED),
@@ -201,8 +229,15 @@ val KB_EN_MESSAGEASE_SYMBOLS_SHIFTED =
             listOf(
                 KeyItemC(
                     center = KeyC("T", size = LARGE),
+                    topLeft = KeyC(
+                        action = KeyAction.ComposeLastKey("~"),
+                        color = ColorVariant.MUTED,
+                    ),
+                    top = KeyC(
+                        action = KeyAction.ComposeLastKey("¨"),
+                        color = ColorVariant.MUTED,
+                    ),
                     topRight = KeyC("Y"),
-                    topLeft = KeyC("~", color = MUTED),
                     right = KeyC("*", color = MUTED),
                     left = KeyC("<", color = MUTED),
                     bottomRight = KeyC("\t", displayText = "⇥", color = MUTED),
@@ -221,7 +256,10 @@ val KB_EN_MESSAGEASE_SYMBOLS_SHIFTED =
                     center = KeyC("S", size = LARGE),
                     topLeft = KeyC("F"),
                     top = KeyC("&", color = MUTED),
-                    topRight = KeyC("°", color = MUTED),
+                    topRight = KeyC(
+                        action = KeyAction.ComposeLastKey("°"),
+                        color = ColorVariant.MUTED,
+                    ),
                     right = KeyC(">", color = MUTED),
                     bottomLeft = KeyC(";", color = MUTED),
                     left = KeyC("#", color = MUTED),
